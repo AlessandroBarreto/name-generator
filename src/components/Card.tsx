@@ -16,7 +16,7 @@ export const Card = ({ randonPerson }: CardProps) => {
         const value = info[1];
 
         return (
-          <h2>
+          <h2 key={key}>
             {key}: <b>{capitalized(value)}</b>
           </h2>
         );
