@@ -1,4 +1,5 @@
 import "../styles/Card.css";
+import { capitalized } from "../utils";
 
 interface CardProps {
   //   yearBirth: string;
@@ -20,10 +21,7 @@ CardProps) => {
   return (
     <div className="card-container">
       <h2>
-        Name: <b>{name}</b>
-      </h2>
-      <h2>
-        Name: <b>{name}</b>
+        Name: <b>{capitalized(name)}</b>
       </h2>
     </div>
   );

@@ -1,4 +1,4 @@
-export const names = [
+export const personsData = [
   ["2016", "FEMALE", "ASIAN AND PACIFIC ISLANDER", "Olivia", "172", "1"],
   ["2016", "FEMALE", "ASIAN AND PACIFIC ISLANDER", "Chloe", "112", "2"],
   ["2016", "FEMALE", "BLACK NON HISPANIC", "Ava", "109", "1"],

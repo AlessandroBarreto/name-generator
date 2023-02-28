@@ -1,8 +1,12 @@
 import { Button } from "./components/Button";
 import { Card } from "./components/Card";
+import { usePerson } from "./hooks/usePerson";
 import "./styles/globals.css";
 
 function App() {
+  const { getRandonPerson, randonPerson } = usePerson();
+  const shouldCardRender = randonPerson.length > 0;
+
   return (
     <div className="App">
       <h1>Name Generator</h1>
@@ -10,15 +14,15 @@ function App() {
         <Button
           color="primary"
           text="Male"
-          onClick={() => console.log("male")}
+          onClick={() => getRandonPerson("MALE")}
         />
         <Button
           color="secondary"
           text="Female"
-          onClick={() => console.log("female")}
+          onClick={() => getRandonPerson("FEMALE")}
         />
       </div>
-      <Card name="alessadro" />
+      {shouldCardRender && <Card name={randonPerson[3]} />}
     </div>
   );
 }

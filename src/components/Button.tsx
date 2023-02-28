@@ -1,4 +1,5 @@
 import "../styles/Button.css";
+import { Gender } from "../utils";
 
 type ButtonColor = "primary" | "secondary";
 
