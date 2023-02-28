@@ -10,10 +10,8 @@ interface ButtonProps {
 
 export const Button = ({ color, text, onClick }: ButtonProps) => {
   return (
-    <div className="button-container">
-      <button className={`button ${color}`} onClick={onClick}>
-        {text}
-      </button>
-    </div>
+    <button className={`button ${color}`} onClick={onClick}>
+      {text}
+    </button>
   );
 };

@@ -1,8 +1,5 @@
-.button-container {
-    margin: 5px;
-}
-
 .button {
+  margin: 5px;
   border-radius: 8px;
   border-style: none;
   color: #ffffff;
