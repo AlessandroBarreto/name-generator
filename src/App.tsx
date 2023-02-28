@@ -5,6 +5,7 @@ import "./styles/globals.css";
 
 function App() {
   const { getRandonPerson, randonPerson } = usePerson();
+
   const shouldCardRender = randonPerson.length > 0;
 
   return (
@@ -22,7 +23,7 @@ function App() {
           onClick={() => getRandonPerson("FEMALE")}
         />
       </div>
-      {shouldCardRender && <Card name={randonPerson[3]} />}
+      {shouldCardRender && <Card randonPerson={randonPerson} />}
     </div>
   );
 }

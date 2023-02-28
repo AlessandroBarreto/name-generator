@@ -2,27 +2,25 @@ import "../styles/Card.css";
 import { capitalized } from "../utils";
 
 interface CardProps {
-  //   yearBirth: string;
-  //   gender: string;
-  //   ethnicity: string;
-  name: string;
-  //   numberBabes: string;
-  //   nameRank: string;
+  randonPerson: string[];
 }
 
-export const Card = ({
-  //   yearBirth,
-  //   gender,
-  //   ethnicity,
-  name,
-}: //   numberBabes,
-//   nameRank,
-CardProps) => {
+export const Card = ({ randonPerson }: CardProps) => {
+  const [Year, Gender, Ethnicity, Name, Babes, Rank] = randonPerson;
+  const personObj = { Name, Gender, Ethnicity, Year, Babes, Rank };
+
   return (
     <div className="card-container">
-      <h2>
-        Name: <b>{capitalized(name)}</b>
-      </h2>
+      {Object.entries(personObj).map((info) => {
+        const key = info[0];
+        const value = info[1];
+
+        return (
+          <h2>
+            {key}: <b>{capitalized(value)}</b>
+          </h2>
+        );
+      })}
     </div>
   );
 };
