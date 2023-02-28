@@ -1,4 +1,5 @@
 import { Button } from "./components/Button";
+import { Card } from "./components/Card";
 import "./styles/globals.css";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
         text="Female"
         onClick={() => console.log("female")}
       />
+      <Card name="alessadro" />
     </div>
   );
 }
