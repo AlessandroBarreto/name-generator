@@ -1,4 +1,4 @@
-# Name Generator App :name_badge:
+# <a href="https://name-generator-app.netlify.app/" target="_blank">Name Generator App</a> :name_badge:
 
 ### Objective
 - We are going to build a name generator for babies. The goal is to pick a popular name, but not always the most popular. Ideally our name generator will follow the underlying statistics of the data.
